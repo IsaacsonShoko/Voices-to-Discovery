@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
 
 const links = [
-  { label: "The Movement", href: "#movement" },
-  { label: "Stories", href: "#stories" },
-  { label: "The Project", href: "#project" },
-  { label: "Join", href: "#join" },
-  { label: "Sign The Declaration", href: "#declaration", accent: true },
+  { label: "The Movement", href: "/#movement" },
+  { label: "Stories", href: "/#stories" },
+  { label: "The Project", href: "/#project" },
+  { label: "Why It Matters", href: "/why-representation-matters" },
+  { label: "Join", href: "/#join" },
+  { label: "Sign The Declaration", href: "/#declaration", accent: true },
 ];
 
 export default function Navbar() {
@@ -30,7 +31,7 @@ export default function Navbar() {
   return (
     <>
       <header className={`site-header ${isScrolled ? "site-header-solid" : ""}`}>
-        <a className="wordmark" href="#top">
+        <a className="wordmark" href="/#top">
           From Voices to Discovery
         </a>
 
